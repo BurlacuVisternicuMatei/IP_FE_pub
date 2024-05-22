@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-message {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  max-width: 60%;
+}
+.input-placeholder-white::placeholder {
+    color: rgba(255, 255, 255, 0.5); 
+    opacity: 1; 
+  }
+  
+
+.user-list {
+    width: 300px;
+    background-color: #212130; 
+    border-right: 0.2px solid white; 
+  }
+  
+  .user-list input, .user-list h1, .user-list h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .user-list h1 {
+    font-size: 2em; 
+  }
+  
+  .user-list h2 {
+    font-size: 1.3em; 
+  }
+  
+  .message-input {
+    background: #2B2B3E; 
+  }
+.chat-input-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: #222233;
+  }
+
+.rounded-full {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ccc; 
+}
+
+.text-sm {
+  font-size: 14px; 
+}
+
+.message-container {
+  max-height: 90vh;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+.user-list {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.message-list-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 90vh; 
+}
+
+.message-input-container {
+  flex-shrink: 0;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  background-color: #ccc; 
+  margin-right: 10px; 
+  flex-shrink: 0; 
+}
+.user-list .user-name {
+  transition: color 0.3s;
+}
+
+.user-list .user-name:hover {
+  color: #2B2B3E;
+}
+
+.message-date {
+  font-size: 0.75rem; 
+  color: #ffffff; 
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.chat-message {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  max-width: 60%;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.attachment-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+
+
+

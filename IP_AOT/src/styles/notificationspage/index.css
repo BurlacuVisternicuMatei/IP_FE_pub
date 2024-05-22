@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notification-page {
+  background-color: #212130; 
+}
+
+.unread {
+  background-color: #8686a794;
+  border-radius: 5px; 
+  margin-bottom: 10px;
+}
+
+.link-hover:hover {
+    color: rgb(33, 33, 36) !important;
+    cursor: pointer;
+    transition: 300ms;
+  }
+  
+  .msg-hover:hover {
+    background-color: #8686a794 !important;
+    border-color: #161718;
+    cursor: pointer;
+    transition: 200ms;
+  }
+  

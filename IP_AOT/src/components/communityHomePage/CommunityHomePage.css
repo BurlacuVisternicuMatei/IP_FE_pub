@@ -1,0 +1,20 @@
+.CommunityHomePage{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: max-content;
+    left: 0;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    padding: 200px 20px 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+
+
+.CommunityHomePage::-webkit-scrollbar {
+    display: none;
+}

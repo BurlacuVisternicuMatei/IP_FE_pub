@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "verified": true, 
+        "community": "Cooking",
+        "profileImg": "https://img.freepik.com/free-vector/cute-shark-swimming-cartoon-icon-illustration_138676-2245.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713484800&semt=ais",
+        "postImg": "https://doc.ro/uploads/photos/uploads/2022/APRILIE/4-retete-de-post-hranitoare.jpg",
+        "contentText": "",
+        "numberOfComments": 120,
+        "dateCreated": 4,
+        "comments" : [
+            {
+                "id": 1,
+                "profileImg" : "https://img.freepik.com/free-vector/cute-shark-swimming-cartoon-icon-illustration_138676-2245.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713484800&semt=ais",
+                "tag" : "enjoy coding",
+                "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                "dateCreated" : "5 hours ago",
+                "verified": false
+            },
+            {
+                "id": 2,
+                "profileImg" : "https://t3.ftcdn.net/jpg/05/68/02/36/360_F_568023692_15idt2j4V5fvXr2YDTbijyl292IRyyMJ.jpg",
+                "tag" : "dogo dogs",
+                "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                "dateCreated" : "5 hours ago",
+                "verified" : true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "verified": false,
+        "community": "Football",
+        "profileImg": "https://img.freepik.com/free-vector/cute-shark-swimming-cartoon-icon-illustration_138676-2245.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713484800&semt=ais",
+        "contentText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "dateCreated": 1,
+        "numberOfComments": 100
+    },
+    {
+        "id": 3,
+        "verified": true,
+        "community": "Cooking2",
+        "profileImg": "https://img.freepik.com/free-vector/cute-shark-swimming-cartoon-icon-illustration_138676-2245.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713484800&semt=ais",
+        "contentText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "postImg": "https://doc.ro/uploads/photos/uploads/2022/APRILIE/4-retete-de-post-hranitoare.jpg",
+        "dateCreated": 2,
+        "numberOfComments": 50
+    }
+]

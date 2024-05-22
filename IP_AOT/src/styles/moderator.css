@@ -1,0 +1,315 @@
+/* CSS actualizat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --background-color1: #222233;
+    --background-color2: #2B2B3E;
+    --button-color: #222233;
+    --logout-button-color: #222233;
+    --logout-button-hover-color: #222233;
+    --logout-button-text-color: #ffffff;
+    --logout-bg-gradient: linear-gradient(45deg, #222233, #222233);
+}
+
+.main-container {
+    background-color: var(--background-color1);
+    max-width: 100%;
+    overflow-x: hidden;
+    color: white;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main-content {
+    width: 100%;
+    overflow-y: scroll;
+    padding: 40px 30px 30px 30px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+
+.main-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background-color: #9e9e9eb2;
+}
+
+.nav {
+    min-height: 100vh;
+    width: 300px;
+    background-color: var(--background-color2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 30px 0 20px 20px;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navcontainer {
+    height: 100vh;
+    width: 400px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: 20px;
+}
+
+.navcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-upper-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-upper-options button {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px 0 20px;
+    gap: 20px;
+    background-color: var(--button-color);
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-upper-options button:hover {
+    border: 2px solid white;
+}
+
+.nav-upper-options button:active {
+    filter: grayscale(70%);
+}
+
+.container {
+    height: 100vh;
+    position: absolute;
+    left: 310px;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 25px;
+    padding: 30px 20px 20px 20px;
+    background-color: var(--background-color2);
+    transition: all 0.5s ease-in-out;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container:hover {
+    overflow-y: auto;
+}
+
+.input {
+    width: calc(100% - 72px);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #61617a;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.settings .input {
+    width: 60%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.settings .input:focus {
+    border: 2px solid #ffffff;
+    background-color: #50505f;
+}
+
+.word-item,
+.student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #61617a;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.word-item span,
+.student-item span {
+    margin-right: 10px;
+}
+
+.word-item button,
+.student-item button {
+    margin-left: auto;
+    margin-right: 0px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.word-item button:hover,
+.student-item button:hover {
+    color: red;
+}
+
+.input + button,
+.tag-request button {
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings button {
+    width: 40%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings button:hover {
+    background-color: #4d4dff;
+}
+
+.tag-request button {
+    width: 90px;
+    height: 50px;
+}
+
+.request-item {
+    border: 2px solid #61617a;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.request-item button {
+    margin-left: auto;
+}
+
+.request-item button:first-child {
+    margin-right: 0px;
+}
+
+.input + button:hover {
+    background-color: rgb(145, 152, 192);
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.disclaimer {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: var(--logout-bg-gradient);
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logout-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.logout-container h2 {
+    color: var(--logout-button-text-color);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.logout-container p {
+    color: var(--logout-button-text-color);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.logout-button {
+    min-width: 100px; /* sau orice valoare doriți */
+    height: 50px;
+    background-color: var(--logout-button-color);
+    color: var(--logout-button-text-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-button:hover {
+    background-color: var(--logout-button-hover-color);
+}

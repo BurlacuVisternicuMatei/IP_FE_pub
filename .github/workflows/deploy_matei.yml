@@ -1,0 +1,52 @@
+
+name: Deploy
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+      working-directory: IP_AOT
+        
+    - name: Clean up current directory on remote machine
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOSTB }}
+        username: ${{ secrets.USERNAMEB }}
+        port: ${{ secrets.PORTB }}
+        key: ${{ secrets.SSHKEYB }}
+        script: sudo rm -rf /home/ubuntu/IP_FE_pub/*
+
+    - name: Copy dist contents via scp
+      uses: appleboy/scp-action@master
+      with:
+        HOST: ${{ secrets.HOSTB }}
+        USERNAME: ${{ secrets.USERNAMEB }}
+        PORT: ${{ secrets.PORTB }}
+        KEY: ${{ secrets.SSHKEYB }}
+        source: "."
+        target: "/home/ubuntu/IP_FE_pub"
+
+    - name: Executing remote command
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOSTB }}
+        USERNAME: ${{ secrets.USERNAMEB }}
+        PORT: ${{ secrets.PORTB }}
+        KEY: ${{ secrets.SSHKEYB }}
+        script: |
+            cd /home/ubuntu/IP_FE_pub/IP_AOT
+            ls
+            

@@ -1,0 +1,55 @@
+.custom-listbox{
+    background-color: #222233 !important;
+    color:white;
+}
+.custom-listbox::-webkit-scrollbar{
+    width: 12px;
+    background-color: #222233;
+}
+.custom-listbox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #414156;
+}
+.css-38raov-MuiButtonBase-root-MuiChip-root{
+    margin:2px !important;
+    max-width: calc(100% - 6px) !important;
+}
+.custom-tag{
+    /* background-color: #3a3a4c;
+    display:flex;
+    flex-direction: row;
+    padding-top: 3px;
+    padding-bottom:3px;
+    padding-left: 8px;
+    padding-right: 3px;
+    border-radius: 15px;
+    margin-left:5px;
+    margin-right:15px;
+    font-size:smaller;
+    color: white; */
+}
+.MuiChip-label{
+    color:white;
+}
+.MuiAutocomplete-root .MuiAutocomplete-tag{
+        background-color:#2b2b3e;
+}
+
+.MuiChip-deleteIcon {
+    display:flex;
+    align-items: center;
+    padding-left: 8px;
+    color: white !important; 
+    cursor:pointer;
+    font-size: 13px;
+}
+.MuiAutocomplete-popupIndicator{
+    color:white !important;
+}
+.MuiAutocomplete-clearIndicator{
+    color:white !important;
+}
+.MuiAutocomplete-popperOption{
+    background-color:white !important;
+}
